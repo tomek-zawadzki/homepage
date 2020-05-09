@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WTF - co ten frontend. Nauka TZ</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <header id="top"  class="header">
+      <nav class="navigation">
+        <a class="navigation__link navigation__link--homepage" href="index.html"
+          >STRONA GŁÓWNA</a
+        >
+        <a class="navigation__link" href="opracowanie.html">OPRACOWANIE</a>
+        <a class="navigation__link" href="dodatki.html">DODATKOWE NOTATKI</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <header class="main__header">
+        <h1 class="main__heading">Nauka frontendu – WTF co ten frontend</h1>
+      </header>
+
+      <article class="section-one">
+        <h2 class="section-one__main-title">Sporządone notatki z kolejnych tygodni.</h2>
+
+
+          <p class="section-one__paragraf">
+            Tutaj są przygotowan
+          </p>
+      
+      </article>
+
+      <article class="workweek">
+        <h3 class="workweek__title">TYDZIEŃ I</h3>
+
+        <section class="week-description">
+          <h4 class="week-description__title">Co nowego?</h4>
+
+          <ul class="week-description__list">
+            <li class="week-description__list--point">
+              Frontend – porównanie do samochodu, odpowiada za karoserię i
+              wnętrze używane przez kierowcę i pasażerów.
+              <ul class="week-description__list">
+                <li class="week-description__list--point">
+                  Odpowiada za wygląd strony lub aplikacji internetowej
+                </li>
+                <li class="week-description__list--point">
+                  Odpowiada ze interakcję z użytkownikiem
+                </li>
+                <li class="week-description__list--point">
+                  Generowany głównie przy użyciu HTML, CSS i JavaScript
+                </li>
+                <li class="week-description__list--point">
+                  Technologie frontendowe w niektórych obszarach przejmują rynek
+                  tradycyjnych aplikacji
+                </li>
+              </ul>
+            </li>
+            <li class="week-description__list--point">
+              Backend – odpowiada za silnik i wszystkie układy które sprawiają,
+              że samochód jedzie (to co pod maską).
+            </li>
+            <li class="week-description__list--point">
+              Konfiguracja potrzebnych narzędzi: Chrome, VSC, Slack, grupa na
+              FB.
+            </li>
+            <li class="week-description__list--point">
+              Uruchomienie pierwszego projektu.
+            </li>
+          </ul>
+       
+        </section>
+
+        <section class="homework">
+          <h4 class="homework__title">Praca domowa:</h4>
+
+          <ol class="homework__list">
+            <li class="homework__list--point">
+              Przejrzenie pliku ‘templated-idustrious’ i „pobawienie się nim”,
+              spróbować zmienić treści na stronie, spróbować zmieniać kod i
+              weryfikować co się dzieje.
+            </li>
+          </ol>
+        </section>
+      </article>
+
+      <article class="workweek">
+        <h3 class="workweek__title">TYDZIEŃ II</h3>
+
+        <section class="week-description">
+          <h4 class="week-description__title">Warstwy strony internetowej</h4>
+
+          <ul class="week-description__list">
+            <li class="week-description__list--point">
+              <b>Warstwa 0 – treść,</b>
+            </li>
+            <li class="week-description__list--point">
+              <b>Warstwa 1 – HTML</b> warstwa semantyczna, nadaje sens treści
+              strony. Tutaj wprowadzamy znaczniki,
+            </li>
+            <li class="week-description__list--point">
+              <b>Warstwa 2 – CSS</b> warstwa prezentacji, nadaje wygląd
+              poprzednim warstwą,
+            </li>
+            <li class="week-description__list--point">
+              <b>Warstwa 3 – JavaScript</b> warstwa interakcji, najtrudniejszy
+              element frontendu, wpływa na wszystkie poprzednie warstwy,
+            </li>
+          </ul>
+
+          <p>
+            <strong>CONTENT IS THE KING</strong> –pamiętaj, że na stronach
+            internetowych to treść jest najważniesza
+          </p>
+
+          <p>
+            <strong>HTML - HyperText Markup Language</strong> - hipertekstowy
+            język znaczników.<br />
+            Odpowiada za właściwe opakowanie treści strony. Treść strony czyli:
+            teksty, nagłówki, linki, listy, definicje, obrazki, video,
+            formularze, wszystko co jest nośnikiem informacji. Opakowujemy je w
+            znaczniki,tagi i elementy. HTML nie jest językiem programowania,
+            jest językiem znaczników.
+          </p>
+          <p>
+            Budowa znacznika:
+          </p>
+          <p class="workweek__span">
+            &lt;znacznik atrybut=”wartość”&gt;treść&lt;/znaczik&gt;
+          </p>
+
+          <p>
+            <strong
+              >CSS – Cascading Style Sheets – kaskadowe arkusze stylów.</strong
+            ><br />
+            Odpowiadają z prezentację strony, wpływają na wygląd elementów HTML
+            na ekranie lub na wydrukach. Składnia CSS to reguły {}
+          </p>
+          <p>
+            Budowa reguły CSS:
+          </p>
+          <p class="workweek__span">
+            selektor {<br />
+            &nbsp;&nbsp; właściwość: wartość;<br />
+            }
+          </p>
+          <p>
+            Podłączenie pliku .css do HTML – umieszczamy w sekcji &lt;head&gt;,
+            poniżej widzimy wzór takiego podłączenia:
+          </p>
+          <p class="workweek__span">
+            &lt;link href=”style.css” rel=”stylesheet’ type=”tekst/css”&gt;
+          </p>
+          podłączenie pliku .css do HTML – umieszczamy w sekcji &lt;head&gt;
+        </section>
+        <section class="week-description">
+          <h4 class="week-description__title">Czym jest programowanie?</h4>
+
+          <p>
+            Zamiana ludzkiego języka na język zrozumiały przez komputer Każdy
+            język programowania ma swoją składnię, gramatykę i ortografię
+            Istnieje ponad 700 języków programowania, w tym szkolenie skupimy
+            się na JavaScript
+          </p>
+        </section>
+        <section class="week-description">
+          <h4 class="week-description__title">JavaScript:</h4>
+
+          <ul class="week-description__list">
+            <li class="week-description__list--point">
+              odpowiada za interakcję,
+            </li>
+            <li class="week-description__list--point">
+              pozwala na programowanie we frontendzie,
+            </li>
+            <li class="week-description__list--point">
+              potrafi wpływać na każdą z warstw,
+            </li>
+            <li class="week-description__list--point">
+              rozszerza możliwości zwykłych stron,
+            </li>
+            <li class="week-description__list--point">
+              aktualnie jeden z najpopularniejszych języków programowania na
+              świecie.
+            </li>
+          </ul>
+        </section>
+        <section class="week-description">
+          <h4 class="week-description__title">
+            DevTools – narzędzia developerskie
+          </h4>
+
+          <p>
+            Za pomocą DevToolsów możemy zobaczyć kod każdej strony, sprawdzić co
+            jak jest zapisane i ewentualnie sprawdzić jak będą wyglądły zmiany.
+            DevTools są uruchamiane poprzez wciśnięcie F12 na klawiaturze.
+          </p>
+        </section>
+        <section class="week-description">
+          <h4 class="week-description__title">
+            Uruchomienie pierwszego projektu.
+          </h4>
+
+          <p>
+            - pierwszy plik HTML (HyperText Markup Language)<br />
+            - pierwszy plik CSS (Cascading Style Sheets )<br />
+          </p>
+        </section>
+
+        <section class="homework">
+          <h4 class="homework__title">Praca domowa:</h4>
+
+          <ol class="homework__list">
+            <li class="homework__list--point">Stwórz projekt homepage.</li>
+            <li class="homework__list--point">Dodaj style.</li>
+            <li class="homework__list--point">Rozwiąż zagadkę</li>
+            <li class="homework__list--point">Myśl jak programiści</li>
+            <li class="homework__list--point">Zrób komuś kawał.</li>
+          </ol>
+        </section>
+      </article>
+
+      <article class="workweek">
+        <h3 class="workweek__title">TYDZIEŃ III</h3>
+
+        <section class="week-description">
+          <h4 class="week-description__title">
+            1. KANBAN – metoda planowania pracy.
+          </h4>
+
+          <p>
+            W organizowaniu pracy metodą Kanban pomaga nam aplikacja
+            <b>TRELLO</b>
+            Dzielimy pracę na trzy kolumy:
+          </p>
+
+          <ol class="week-description__list">
+            <li class="week-description__list--point">
+              Do zrobienia / to do - tutaj trafiają wszystkie zadanie do
+              zrobienia.
+            </li>
+            <li class="week-description__list--point">
+              W trakcie / doing - tutaj przerzucamy zadanie aktualnie
+              wykonywane.<b>UWAGA! robimy tylko jedną rzecz na raz.</b>
+            </li>
+            <li class="week-description__list--point">
+              Zrobione / done - po skończeniu zadanie trafia do tej kolumny
+            </li>
+          </ol>
+        </section>
+        <section class="week-description">
+          <h4 class="head-content">2. NAZEWNICTWO</h4>
+
+          <p>
+            Jak wpisywać nazwy(np. selektorów):
+          </p>
+
+          <ul class="week-description__list">
+            <li class="week-description__list--point">bez polskich znaków,</li>
+            <li class="week-description__list--point">nie używamy spacji,</li>
+            <li class="week-description__list--point">
+              używać angielskich słów,
+            </li>
+            <li class="week-description__list--point">
+              się jednego schematy (konsekwencja jest istotna).
+            </li>
+          </ul>
+
+          <p>
+            Konwencje nazewnicta:<br />
+            Przykład: My super bold header<br />
+            <b>camelCase</b> – mySuperBoldHeader<br />
+            <b>kebab-case</b> - my-super-bold-header<br />
+            <b>sneak_case</b> – my_super_bold_header<br />
+            <b>PascalCase</b> – MySuperBoldHeader<br />
+          </p>
+        </section>
+
+        <section class="week-description">
+          <h4 class="week-description__title">
+            Jak działa internet i przeglądarka
+          </h4>
+
+          <p>
+            Protokół który obsługuje strony internetowe i ich zawartość to HTTP
+            (obecnie coraz częściej HTTP/2). Komunikacja przeglądarka - serwer
+            odbywa się na zasadzie request - response.
+          </p>
+          <p>
+            Odpowiedzi serwera mają różne kody:
+          </p>
+          <ul class="week-description__list">
+            <li class="week-description__list--point">
+              <span class="span-point__two">-200-</span>- wszystko OK
+            </li>
+            <li class="week-description__list--point">
+              <span class="span-point__three">-30X-</span>- szukasz w złym
+              miejscu - przekieruję Cię w odpowiednie miejsce
+            </li>
+            <li class="week-description__list--point">
+              <span class="span-point__four">-404-</span>- błąd - nie mam tego
+              czego potrzebujesz
+            </li>
+            <li class="week-description__list--point">
+              <span class="span-point__five">-50X-</span>- błąd wewnętrzny
+              serwera (frontend nic z tym nie zrobi)
+            </li>
+          </ul>
+
+          <p>
+            Root (/) jest istotną częścią ścieżek do zasobów - trzeba się
+            nauczyć jak on działa.
+          </p>
+        </section>
+
+        <section class="week-description">
+          <h4 class="week-description__title">JavaScript</h4>
+
+          <p>
+            JavaScript to frontendowe programowanie dzięki, któremu można
+            wykonać wiele ciekawych i szalonych rzeczy. Implemantuje rzeczy ze
+            specyfikacji ECMAScript. ECMAScript to ustandaryzowany skryptowy język
+            programowania.
+          </p>
+        </section>
+        <section class="homework">
+          <h4 class="homework__title">Praca domowa:</h4>
+
+          <ol class="homework__list">
+            <li class="homework__list--point">
+              Załóż tablicę na Trello i wrzucaj tam prace domowe.
+            </li>
+            <li class="homework__list--point">Rozbuduj projekt homepage.</li>
+            <li class="homework__list--point">Dodaj klasy.</li>
+            <li class="homework__list--point">Przejdź labirynt.</li>
+            <li class="homework__list--point">
+              Dołóż skrypt do swojej strony i przywitaj się w konsoli z
+              odbiorcą.
+            </li>
+          </ol>
+        </section>
+      </article>
+
+      <article class="workweek">
+        <h3 class="workweek__title">TYDZIEŃ IV</h3>
+
+        <section class="week-description">
+          <h4 class="week-description__title">
+            1. GIT.
+          </h4>
+          <p>
+            GIT jest to system kontroli wersji. GIT składa się z repozytoriów czyli z naszego projektu, 
+            a nasz projekt to wszystkie nasze pliki stworzone lub wykorzystane do danego projektu.
+          </p>
+        </section>
+
+        <section class="homework">
+          <h4 class="homework__title">Praca domowa:</h4>
+
+          <ol class="homework__list">
+            <li class="homework__list--point">Załóż konto na githubie.</li>
+            <li class="homework__list--point">
+              Wrzuć projekt homepage na githuba.
+            </li>
+            <li class="homework__list--point">Zacznij commitować zmiany.</li>
+            <li class="homework__list--point">
+              Dostosuj style tak, aby ograniczyć szerokość treści i ją
+              wyśrodkuj.
+            </li>
+            <li class="homework__list--point">
+              Stwórz pusty element z wybraną klasą i uzupełnij go za pomocą JS.
+            </li>
+          </ol>
+        </section>
+      </article>
+
+      <a class="jump" href="#top">Idź na górę strony</a>
+    </main>
+
+    <footer class="footer">
+      <p><small>Strona stworzona przez Tomka Zawadzkiego</small></p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+body {
+  background-color: #092327;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main__header {
+  font-size: 1.5em;
+  color: #e0ff4f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #e0ff4f;
+}
+
+.section-one__paragraf--link {
+color: #e0ff4f;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.navigation__link {
+  color: #e0ff4f;
+  background-color: #00a9a5;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 8px;
+  margin-top: 8px;
+}
+
+.navigation__link:hover {
+  color: #00a9a5;
+  background-color: #e0ff4f;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.section-one {
+  background-color: #104f55;
+  margin: 30px;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.section-one__main-title {
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  padding-bottom: 30px;
+  border-bottom: #092327 dashed 2px;
+  margin: 0, 40px;
+}
+
+.container__workweek-plan {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 2.5rem;
+  width: 95%;
+}
+
+.workweek {
+  background-color: #104f55;
+  margin: 30px;
+  padding: 20px;
+  border-radius: 30px;
+  width: 250px;
+  min-height: 400px;
+}
+
+.workweek__title {
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  padding-bottom: 30px;
+  border-bottom: #092327 dashed 2px;
+  margin: 0, 40px;
+}
+.container__week-description {
+  display: flex;
+  flex-direction: row;
+}
+
+.week-description__container {
+  width: 250px;
+  border: 1px solid black;
+}
+
+.week-description__image {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  right: 0;
+}
+
+.workweek__paragraf-bottom {
+  padding: 6px;
+  color: #e0ff4f;
+  text-align: center;
+  border: 2px solid #e0ff4f;
+  border-radius: 8px;
+}
+
+.workweek__paragraf-bottom:hover {
+  padding: 6px;
+  color: #104f55;
+  text-align: center;
+  border: 2px solid #104f55;
+  border-radius: 8px;
+  background-color: #e0ff4f;
+}
+
+
+.homework {
+  background-color: #00a9a5;
+  margin: 10px;
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.jump {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid #e0ff4f;
+}
