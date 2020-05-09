@@ -17,7 +17,7 @@ body {
 }
 
 .section-one__paragraf--link {
-color: #e0ff4f;
+  color: #e0ff4f;
 }
 
 .navigation {
@@ -116,7 +116,6 @@ color: #e0ff4f;
   border-radius: 8px;
   background-color: #e0ff4f;
 }
-
 
 .homework {
   background-color: #00a9a5;

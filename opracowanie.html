@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <header id="top"  class="header">
+    <header id="top" class="header">
       <nav class="navigation">
         <a class="navigation__link navigation__link--homepage" href="index.html"
           >STRONA GŁÓWNA</a
@@ -23,18 +23,16 @@
         <h1 class="main__heading">Nauka frontendu – WTF co ten frontend</h1>
       </header>
 
-      <article class="section-one">
-        <h2 class="section-one__main-title">Sporządone notatki z kolejnych tygodni.</h2>
-
-
-          <p class="section-one__paragraf">
-            Tutaj są przygotowan
-          </p>
-      
-      </article>
+      <nav class="navigation-weeks">
+        <h2 class="navigation-weeks__title">Dodatkowe notatki</h2>
+        <a class="navigation-weeks__href" href="#week-one">TYDZIEŃ I</a>
+        <a class="navigation-weeks__href" href="#week-two">TYDZIEŃ II</a>
+        <a class="navigation-weeks__href" href="#week-three">TYDZIEŃ III</a>
+        <a class="navigation-weeks__href" href="#week-four">TYDZIEŃ IV</a>
+      </nav>
 
       <article class="workweek">
-        <h3 class="workweek__title">TYDZIEŃ I</h3>
+        <h3 id="week-one" class="workweek__title">TYDZIEŃ I</h3>
 
         <section class="week-description">
           <h4 class="week-description__title">Co nowego?</h4>
@@ -71,7 +69,6 @@
               Uruchomienie pierwszego projektu.
             </li>
           </ul>
-       
         </section>
 
         <section class="homework">
@@ -88,7 +85,7 @@
       </article>
 
       <article class="workweek">
-        <h3 class="workweek__title">TYDZIEŃ II</h3>
+        <h3 id="week-two" class="workweek__title">TYDZIEŃ II</h3>
 
         <section class="week-description">
           <h4 class="week-description__title">Warstwy strony internetowej</h4>
@@ -224,7 +221,7 @@
       </article>
 
       <article class="workweek">
-        <h3 class="workweek__title">TYDZIEŃ III</h3>
+        <h3 id="week-three" class="workweek__title">TYDZIEŃ III</h3>
 
         <section class="week-description">
           <h4 class="week-description__title">
@@ -280,7 +277,7 @@
         </section>
 
         <section class="week-description">
-          <h4 class="week-description__title">
+          <h4 id="week-four" class="week-description__title">
             Jak działa internet i przeglądarka
           </h4>
 
@@ -322,8 +319,8 @@
           <p>
             JavaScript to frontendowe programowanie dzięki, któremu można
             wykonać wiele ciekawych i szalonych rzeczy. Implemantuje rzeczy ze
-            specyfikacji ECMAScript. ECMAScript to ustandaryzowany skryptowy język
-            programowania.
+            specyfikacji ECMAScript. ECMAScript to ustandaryzowany skryptowy
+            język programowania.
           </p>
         </section>
         <section class="homework">
@@ -349,11 +346,31 @@
 
         <section class="week-description">
           <h4 class="week-description__title">
-            1. GIT.
+            GIT.
           </h4>
           <p>
-            GIT jest to system kontroli wersji. GIT składa się z repozytoriów czyli z naszego projektu, 
-            a nasz projekt to wszystkie nasze pliki stworzone lub wykorzystane do danego projektu.
+            GIT jest to system kontroli wersji. GIT składa się z repozytoriów
+            czyli z naszego projektu, a nasz projekt to wszystkie nasze pliki
+            stworzone lub wykorzystane do danego projektu. I tak jak sama nazwa
+            wskazuje możemy go użyć m.in. do takich rzeczy jak: powrót do
+            poprzedniej wersji swojego pliku, odzyskanie skazowanych danych, do
+            zrobienia zmian i powrotu do stanu przed ich dokonaniem, dzielić się
+            projektem w grupie.<br />
+            Commit = stan projektu i opis tego co się zmieniło od ostatniego
+            zapisu.<br />
+            Commitujemy jak dokładamy jakąś widoczną zmianę do projektu. Lepiej
+            commitować częściej niż za mało.<br />
+            Kolejność działania (terminal) - git add . / git commit -m "opis
+            zmiany" / git push
+          </p>
+        </section>
+        <section class="week-description">
+          <h4 class="weel-description__title">GitHub.</h4>
+          <p>
+            Github != GIT<br />
+            GitHub jest jednym z serwerów który pozwala aby GIT działał zdalnie.
+            Jest on programistyczną wizytówką więc warto aby nasze konto na
+            GitHubie było zadbane ładne i "prawdziwe".
           </p>
         </section>
 
