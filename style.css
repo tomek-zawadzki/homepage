@@ -110,7 +110,7 @@ body {
   border-radius: 30px;
 }
 
-.workweek__span {
+.workweek-border {
   display: inline-block;
   border: 2px solid white;
   padding: 15px;

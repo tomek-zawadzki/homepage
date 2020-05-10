@@ -125,7 +125,7 @@
           <p class="week-description__paragraf">
             Budowa znacznika:
           </p>
-          <p class="workweek__span">
+          <p class="week-description__paragraf workweek-border">
             &lt;znacznik atrybut=”wartość”&gt;treść&lt;/znaczik&gt;
           </p>
 
@@ -139,7 +139,7 @@
           <p class="week-description__paragraf">
             Budowa reguły CSS:
           </p>
-          <p class="workweek__span">
+          <p class="week-description__paragraf workweek-border">
             selektor {<br />
             &nbsp;&nbsp; właściwość: wartość;<br />
             }
@@ -148,10 +148,9 @@
             Podłączenie pliku .css do HTML – umieszczamy w sekcji &lt;head&gt;,
             poniżej widzimy wzór takiego podłączenia:
           </p>
-          <p class="workweek__span">
+          <p class="week-description__paragraf workweek-border">
             &lt;link href=”style.css” rel=”stylesheet’ type=”tekst/css”&gt;
           </p>
-          podłączenie pliku .css do HTML – umieszczamy w sekcji &lt;head&gt;
         </section>
         <section class="week-description">
           <h4 class="week-description__title">Czym jest programowanie?</h4>
@@ -322,7 +321,24 @@
             specyfikacji ECMAScript. ECMAScript to ustandaryzowany skryptowy
             język programowania.
           </p>
+          <p class="week-description__paragraf">
+            Przykład podłączenia pliku JS do HTML-a.
+          </p>
+
+          <p class="week-description__paragraf workweek-border">
+            &lt;script src="main.js&gt;&lt;/script"&gt;
+          </p>
         </section>
+
+        <section class="week-description">
+          <h4 class="week-description__title">Terminal</h4>
+
+          <p class="week-description__paragraf">
+            Terminal jest to wiersz poleceń, w którym poruszamy się właśnie za pomocą poleceń. Możemy w nim m.in.
+            otwierać i obsługiwać programy, poruszać się po plikach i folderach. Niektóre programy obsługujemy jedynie
+            z poziomu terminala. Znajomość obsługi terminala jest kluczowa w pracy programisty (frontendowaca czy backendowaca).
+          </p>
+
         <section class="homework">
           <h4 class="homework__title">Praca domowa:</h4>
 
@@ -440,7 +456,7 @@
             zmienne != wartość<br>
             Zmienna to takie połączenie ze wszechświatem wartości. Zmienna to nie wartość, 
             ona tylko wskazuje na wartość która już istnieje. Są trzy sposoby zapisywania zmiennych w JS: LET vs CONST vs VAR.
-            <b>constt</b> ma stałe połączenie z daną wartością. <b>let</b> wartość w let po zdefiniowaniu może być zmieniana.
+            <b>const</b> - ma stałe połączenie z daną wartością. <b>let</b> - wartość w let po zdefiniowaniu może być zmieniana.
             Definiujemy tylko raz. Zmienne w JS przyjmują każdy typ danych.  
           </p>
           <p class="week-description__paragraf">Typy proste w JS (primitives)</p>
@@ -455,7 +471,18 @@
           </ul>
           
        <p><strong>IMMUTABILITY</strong>- jest to nazwa konceptu, który mówi, że nie możemy zmieniać wartości primitive values w JS.
-         To co zmieniamy to płączenia między nimi, a zmiennymi</p>
+         To co zmieniamy to płączenia między nimi, a zmiennymi.</p>
+        </section>
+
+        <section class="week-description">
+          <h4 class="week-description__title">DOM.</h4>
+          <p class="week-description__paragraf">
+            DOM - document object model (obiektowy model dokumentu). DOM to "złożony" w przeglądarce HTML czyli to co widzimy w DevTools.
+            JavaScript może modyfikować DOM. Funkcja querySelector zwraca node (węzeł) z HTML-a, a selektor jest zapisywany zgodnie z CSS.
+          </p>
+          <p class="week-description__paragraf workweek-border">
+          document.querySelector('selector')
+          </p>
         </section>
         
 
