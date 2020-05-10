@@ -277,7 +277,7 @@
         </section>
 
         <section class="week-description">
-          <h4 id="week-four" class="week-description__title">
+          <h4 class="week-description__title">
             Jak działa internet i przeglądarka
           </h4>
 
@@ -324,7 +324,7 @@
           </p>
         </section>
         <section class="homework">
-          <h4 id="week-four" class="homework__title">Praca domowa:</h4>
+          <h4 class="homework__title">Praca domowa:</h4>
 
           <ol class="homework__list">
             <li class="homework__list--point">
@@ -342,7 +342,7 @@
       </article>
 
       <article class="workweek">
-        <h3 class="workweek__title">TYDZIEŃ IV</h3>
+        <h3 id="week-four" class="workweek__title">TYDZIEŃ IV</h3>
 
         <section class="week-description">
           <h4 class="week-description__title">
@@ -390,7 +390,7 @@
             Wszystkie elementy na stronie internetowej są otoczone "niewidzialnym prostokątem". Na Box model składają 
             się takie własności jak: padding, border, margin oraz oczywiście sam element.
           </p>
-          <img class="week-description__picture picture-boxmodel" src="picture/css_box_model_chrome.png" alt="box model" title="box model">
+            <img class="week-description__picture picture-boxmodel" src="picture/css_box_model_chrome.png" alt="box model" title="box model">
           <p class="week-description__paragraf">
             Sposób zapisywania wymiarów dla padding, i margin:<br>
             zapis pełny:
@@ -425,6 +425,13 @@
             Możemy używać skróconego jak i pełnego zapisu.
           </p>
           <span class="week-description__paragraf--text-color">border: 2px solid yellow;</span>
+
+          <p class="week-description__paragraf">
+            <b>Position</b> - pozycjonowanie elementów w przestrzeni, nie tylko za pomocą narzuconych przez przeglądarkę
+            domyślnych układów. Pozwala na dokładne ustawienie elementu na stronie. Domyślna pozycja to static, mogą być 
+            również: relative, absolute, fixed i sticky. Dla dokładnego ustawienia dopisuje się jeszcze w CSS wartości:
+             top, left, right i bottom.
+          </p>
         </section>
 
         <section class="week-description">
@@ -438,15 +445,15 @@
           </p>
           <p class="week-description__paragraf">Typy proste w JS (primitives)</p>
           <ul class="week-description__list">
-            <li class="week-description__list-point">String - tekst, otaczamy ' lub " (zalecane ')</li>
-            <li class="week-description__list-point">Number - liczba</li>
-            <li class="week-description__list-point">Bigint - duża liczba</li>
-            <li class="week-description__list-point">boolean - true lub false</li>
-            <li class="week-description__list-point">null - wartość celowo niezdefiniowana</li>
-            <li class="week-description__list-point">undefinded - brak definicji</li>
-            <li class="week-description__list-point">*symbol - tworzy "unikalne opakowanie"</li>
+            <li class="week-description__list--point">String - tekst, otaczamy ' lub " (zalecane ')</li>
+            <li class="week-description__list--point">Number - liczba</li>
+            <li class="week-description__list--point">Bigint - duża liczba</li>
+            <li class="week-description__list--point">boolean - true lub false</li>
+            <li class="week-description__list--point">null - wartość celowo niezdefiniowana</li>
+            <li class="week-description__list--point">undefinded - brak definicji</li>
+            <li class="week-description__list--point">*symbol - tworzy "unikalne opakowanie"</li>
           </ul>
-          <p>typeof - tym poleceniem sprawdzamy jakiego typu jest wartość zawarta w zmiennej. clear - wyczyszczenie konsoli.</p>
+          
        <p><strong>IMMUTABILITY</strong>- jest to nazwa konceptu, który mówi, że nie możemy zmieniać wartości primitive values w JS.
          To co zmieniamy to płączenia między nimi, a zmiennymi</p>
         </section>

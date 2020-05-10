@@ -33,12 +33,7 @@
 
       <article class="workweek">
         <h3 id="week-one" class="workweek__title">TYDZIEŃ I</h3>
-        <section class="week-description">
-          <h4 class="week-description__title">New:</h4>
-          <p>
-            BRAK
-          </p>
-        </section>
+       
         <section class="workweek__website">
           <h4 class="workweek__website--title">
             Przydatne strony internetowe z tygodnia.
@@ -84,13 +79,12 @@
       <article class="workweek">
         <h3 id="week-two" class="workweek__title">TYDZIEŃ II</h3>
         <section class="week-description">
-          <h4 class="week-description__title">New:</h4>
+          <h4 class="week-description__title">Znaczniki HTML:</h4>
           <p>
             Wpisanie <b>!</b> i wciśnięcie <b>TAB</b> tworzy szkielet strony w
-            VSC<br />
-
-            Znaczniki HTML:
+            VSC
           </p>
+           
           <ul class="week-description__list">
             <li class="week-description__list--point">
               &lt;main&gt; - główna część dokumentu
@@ -158,9 +152,7 @@
       <article class="workweek">
         <h3 id="week-three" class="workweek__title">TYDZIEŃ III</h3>
         <section class="week-description">
-          <h4 class="week-description__title">New:</h4>
-
-          Znaczniki HTML:
+          <h4 class="week-description__title">Znaczniki HTML:</h4>
           <ul class="week-description__list">
             <li class="week-description__list--point">
               &lt;br&gt; - nowa linia
@@ -195,10 +187,10 @@
               &lt;img&gt; - obrazek o podanym adresie
             </li>
           </ul>
+        </section>
 
-          <p>
-            Atrybuty HTML:
-          </p>
+          <section class="week-description">
+            <h4 class="week-description__title">Atrybuty HTML:</h4>
           <ul class="week-description__list">
             <li class="week-description__list--point">
               Id – identyfikuje element (przydaje się m.in. do nawigacji w
@@ -257,7 +249,67 @@
         <h3 id="week-four" class="workweek__title">TYDZIEŃ IV</h3>
         <section class="week-description">
           <h4 class="week-description">Znaczniki html:</h4>
-          <p class="week-description__paragraf">&lt;div&gt; - nie ma znaczenia semantyczne, używamy gdy chcemy coś opakować</p>
+          <ul class="week-description__list">
+          <li class="week-description__list--point">&lt;div&gt; - nie ma znaczenia semantyczne, używamy gdy chcemy coś opakować</li>
+          </ul>
+        </section>
+
+        <section class="week-description">
+          <h4 class="week-description__title">CSS:</h4>
+          <ul class="week-description__list">
+            <li class="week-description__list--point">display: block; - elementy domyślnie układają się jeden pod drugim i zajmują całą szerokość</li>
+            <li class="week-description__list--point">display: inline; - elementy domyślnie ustawiają się koło siebie i zajmują tyle szerokości ile same mają</li>
+            <li class="week-description__list--point">display: inline-block; - przyjmują właściwości powyższych i tak ustawiają się obok siebie, ale możemy dowolnie zmieniać 
+              ich wysokości i szerokości.</li>
+            <li class="week-description__list--point">width/height - wysokość i szerkość elementu</li>
+            <li class="week-description__list--point">max-width/min-width/max-height/min-height - maksymalny i minimalny rozmiar szerokości i wysokości</li>
+            <li class="week-description__list--point">overflow - pokazuje co ma zrobić element, który się nie mieści w swoim rodzicu</li>
+            <li class="week-description__list--point">overflow: visible; - wartość domyślna</li>
+            <li class="week-description__list--point">overflow: hidden; - wystająca treść jest schowana</li>
+            <li class="week-description__list--point">overflow: auto; - pojawia się scroll dzięki czemu możemy przewijać box</li>
+            <li class="week-description__list--point">padding - wewnętrzne odległości od siebie elementów</li>
+            <li class="week-description__list--point">margin - zewnętrzne odległości od siebie elementów</li>
+            <li class="week-description__list--point">border - ramka elementu</li>
+            <li class="week-description__list--point">border-radius  - zaokrąglenie kątów bordera</li>
+            <li class="week-description__list--point">position - pozycjonowanie elementów niezależnie od ustawień domyślnych</li>
+            <li class="week-description__list--point">position: static; - domyślne ustawienie</li>
+            <li class="week-description__list--point">position: relative; - otwiera nam możliwość korzystania z innych ustawień</li>
+            <li class="week-description__list--point">position: absolute; - tylko dokładne usatwienie na stronie</li>
+            <li class="week-description__list--point">position: fixed; - dokładne usatwienie na stronie nawet z przewijaniem strony</li>
+            <li class="week-description__list--point">position: sticky; - dokładne ustawienie w pewnym obszarze, przesuwa się tylko do wyznaczonych miejsc</li>
+            <li class="week-description__list--point">float: left/right; - opływanie  tekstu przez inny element z lewej lub prawej strony</li>
+            <li class="week-description__list--point">box-sizing - pokazuje jak wartości w box modelu mają być liczone</li>
+            <li class="week-description__list--point">box-sizing: contetn-box; - domyśle ustawienia </li>
+            <li class="week-description__list--point">box-sizing: border-box; - wysokość i szerkość elementu jest liczona do bordera bez marginu </li>
+            </ul>
+            <p class="week-description__paragraf">
+              Jednostki (piszemy zaraz przy liczbach bez spacji):
+            </p>
+            <ul class="week-description__list">
+            <li class="week-description__list--point">0 - zero to zero nic więcej nie musimy dopisywać</li>
+            <li class="week-description__list--point">px - piksele (podstawowa jednostka)</li>
+            <li class="week-description__list--point">% - procent, jest brany zawsze od z całości rodzica</li>
+            <li class="week-description__list--point">vw - viewport width, bierze procentową szerokość z całej szerokości strony</li>
+            <li class="week-description__list--point">vh - viewport height, bierze procentową wysokość z całej wysokości strony</li>
+            </ul>
+        </section>
+
+        <section class="week-description">
+          <h4 class="week-description__title">JS:</h4>
+           <ul class="week-description__list">
+             <li class="week-description__list--point">typeof - sprawdzenie jakiego typu wartość jest zawarta w zmiennej</li>
+             <li class="week-description__list--point">clear - wyczyszczenie konsoli</li>
+           </ul>
+          <p class="week-description__paragraf">Typy proste w JS (primitives)</p>
+          <ul class="week-description__list">
+            <li class="week-description__list--point">String - tekst, otaczamy ' lub " (zalecane ')</li>
+            <li class="week-description__list--point">Number - liczba</li>
+            <li class="week-description__list--point">Bigint - duża liczba</li>
+            <li class="week-description__list--point">boolean - true lub false</li>
+            <li class="week-description__list--point">null - wartość celowo niezdefiniowana</li>
+            <li class="week-description__list--point">undefinded - brak definicji</li>
+            <li class="week-description__list--point">*symbol - tworzy "unikalne opakowanie"</li>
+          </ul>
         </section>
         
         <section class="week-description">
