@@ -35,7 +35,7 @@
         <h3 id="week-one" class="workweek__title">TYDZIEŃ I</h3>
 
         <section class="week-description">
-          <h4 class="week-description__title">Co nowego?</h4>
+          <h4 class="week-description__title week-description__title--js">Co nowego?</h4>
 
           <ul class="week-description__list">
             <li class="week-description__list--point">
@@ -334,10 +334,13 @@
           <h4 class="week-description__title">Terminal</h4>
 
           <p class="week-description__paragraf">
-            Terminal jest to wiersz poleceń, w którym poruszamy się właśnie za pomocą poleceń. Możemy w nim m.in.
-            otwierać i obsługiwać programy, poruszać się po plikach i folderach. Niektóre programy obsługujemy jedynie
-            z poziomu terminala. Znajomość obsługi terminala jest kluczowa w pracy programisty (frontendowaca czy backendowaca).
+            Terminal jest to wiersz poleceń, w którym poruszamy się właśnie za
+            pomocą poleceń. Możemy w nim m.in. otwierać i obsługiwać programy,
+            poruszać się po plikach i folderach. Niektóre programy obsługujemy
+            jedynie z poziomu terminala. Znajomość obsługi terminala jest
+            kluczowa w pracy programisty (frontendowaca czy backendowaca).
           </p>
+        </section>
 
         <section class="homework">
           <h4 class="homework__title">Praca domowa:</h4>
@@ -392,99 +395,155 @@
         <section class="week-description">
           <h4 class="week-description__title">Pozycjonowanie elementów.</h4>
           <p class="week-description__paragraf">
-            Świat stron internetowych jest płaski (prawie cały), poruszamy się w przestrzeni dwu-wymiarowej. W stylowaniu 
-            pomaga nam znacznik <b>&lt;div&gt;</b>. Nie ma on znaczenia semantycznego, jest używany tylko do stylowania i używamy go tylko 
-            gdy nie istnieje odpowiedni semantyczny znacznik. Trzeba uważać z używaniem tego znacznika gdyż często jest on nadużywany.<br>
-            Ważną własnąścią w tym temacie jest własność <b>display</b>. Display może przyjmować m.in.: wartości block, inline i inline-block.<br>
-            Block - elementy domyślnie układają się jeden pod drugim i zajmują całą szerokość.<br>
-            Inline - elementy domyślnie ustawiają się koło siebie i zajmują tyle szerokości ile same mają.<br>
-            Inline-block - przyjmują właściwości powyższych i tak ustawiają się obok siebie, ale możemy dowolnie zmieniać 
-            ich wysokości i szerokości.
+            Świat stron internetowych jest płaski (prawie cały), poruszamy się w
+            przestrzeni dwu-wymiarowej. W stylowaniu pomaga nam znacznik
+            <b>&lt;div&gt;</b>. Nie ma on znaczenia semantycznego, jest używany
+            tylko do stylowania i używamy go tylko gdy nie istnieje odpowiedni
+            semantyczny znacznik. Trzeba uważać z używaniem tego znacznika gdyż
+            często jest on nadużywany.<br />
+            Ważną własnąścią w tym temacie jest własność <b>display</b>. Display
+            może przyjmować m.in.: wartości block, inline i inline-block.<br />
+            Block - elementy domyślnie układają się jeden pod drugim i zajmują
+            całą szerokość.<br />
+            Inline - elementy domyślnie ustawiają się koło siebie i zajmują tyle
+            szerokości ile same mają.<br />
+            Inline-block - przyjmują właściwości powyższych i tak ustawiają się
+            obok siebie, ale możemy dowolnie zmieniać ich wysokości i
+            szerokości.
           </p>
           <p class="week-description__paragraf">
-            <b>Box model</b> - fundamet tworzenia layoutu, czyli wyglądu strony internetowej. 
-            Wszystkie elementy na stronie internetowej są otoczone "niewidzialnym prostokątem". Na Box model składają 
-            się takie własności jak: padding, border, margin oraz oczywiście sam element.
+            <b>Box model</b> - fundamet tworzenia layoutu, czyli wyglądu strony
+            internetowej. Wszystkie elementy na stronie internetowej są otoczone
+            "niewidzialnym prostokątem". Na Box model składają się takie
+            własności jak: padding, border, margin oraz oczywiście sam element.
           </p>
-            <img class="week-description__picture picture-boxmodel" src="picture/css_box_model_chrome.png" alt="box model" title="box model">
+          <img
+            class="week-description__picture picture-boxmodel"
+            src="picture/css_box_model_chrome.png"
+            alt="box model"
+            title="box model"
+          />
           <p class="week-description__paragraf">
-            Sposób zapisywania wymiarów dla padding, i margin:<br>
+            Sposób zapisywania wymiarów dla padding, i margin:<br />
             zapis pełny:
           </p>
-            <p class="week-description__paragraf">
-           <span class="week-description__paragraf--text-color">padding-top: 4px;</span>
-           <span class="week-description__paragraf--text-color">padding-right: 5px;</span>
-           <span class="week-description__paragraf--text-color">padding-bottom: 6px;</span>
-           <span class="week-description__paragraf--text-color">padding-left: 7px;</span>
-            </p>
-            <p class="week-description__paragraf">
+          <p class="week-description__paragraf">
+            <span class="week-description__paragraf--text-color"
+              >padding-top: 4px;</span
+            >
+            <span class="week-description__paragraf--text-color"
+              >padding-right: 5px;</span
+            >
+            <span class="week-description__paragraf--text-color"
+              >padding-bottom: 6px;</span
+            >
+            <span class="week-description__paragraf--text-color"
+              >padding-left: 7px;</span
+            >
+          </p>
+          <p class="week-description__paragraf">
             Shorthand (zapis skrócony):
           </p>
-            <span class="week-description__paragraf--text-color">margin: 4px 5px 6px 7px;</span>
-            <span class="week-description__paragraf--text-color">margin: top right bottom left;</span>
-         
-            <p class="week-description__paragraf">
-            Gdy góra=dół i prawa strona=lewa strona:
-          </p>
-           
-              <span class="week-description__paragraf--text-color">margin: 16px 24px;</span>
-            <span class="week-description__paragraf--text-color">margin: (góra i dół) (prawa i lewa strona);</span>
-          
-            <p class="week-description__paragraf">
-            Gdy wszystkie storny są takie same:
-          </p>
-            
-              <span class="week-description__paragraf--text-color">margin: 16px;</span>
-          
-          <p class="week-description__paragraf">
-            Dla właściwości border sposób zapisu jest podobny tylko musimy jeszcze dołożyć warotości color i style.
-            Możemy używać skróconego jak i pełnego zapisu.
-          </p>
-          <span class="week-description__paragraf--text-color">border: 2px solid yellow;</span>
+          <span class="week-description__paragraf--text-color"
+            >margin: 4px 5px 6px 7px;</span
+          >
+          <span class="week-description__paragraf--text-color"
+            >margin: top right bottom left;</span
+          >
 
           <p class="week-description__paragraf">
-            <b>Position</b> - pozycjonowanie elementów w przestrzeni, nie tylko za pomocą narzuconych przez przeglądarkę
-            domyślnych układów. Pozwala na dokładne ustawienie elementu na stronie. Domyślna pozycja to static, mogą być 
-            również: relative, absolute, fixed i sticky. Dla dokładnego ustawienia dopisuje się jeszcze w CSS wartości:
-             top, left, right i bottom.
+            Gdy góra=dół i prawa strona=lewa strona:
+          </p>
+
+          <span class="week-description__paragraf--text-color"
+            >margin: 16px 24px;</span
+          >
+          <span class="week-description__paragraf--text-color"
+            >margin: (góra i dół) (prawa i lewa strona);</span
+          >
+
+          <p class="week-description__paragraf">
+            Gdy wszystkie storny są takie same:
+          </p>
+
+          <span class="week-description__paragraf--text-color"
+            >margin: 16px;</span
+          >
+
+          <p class="week-description__paragraf">
+            Dla właściwości border sposób zapisu jest podobny tylko musimy
+            jeszcze dołożyć warotości color i style. Możemy używać skróconego
+            jak i pełnego zapisu.
+          </p>
+          <span class="week-description__paragraf--text-color"
+            >border: 2px solid yellow;</span
+          >
+
+          <p class="week-description__paragraf">
+            <b>Position</b> - pozycjonowanie elementów w przestrzeni, nie tylko
+            za pomocą narzuconych przez przeglądarkę domyślnych układów. Pozwala
+            na dokładne ustawienie elementu na stronie. Domyślna pozycja to
+            static, mogą być również: relative, absolute, fixed i sticky. Dla
+            dokładnego ustawienia dopisuje się jeszcze w CSS wartości: top,
+            left, right i bottom.
           </p>
         </section>
 
         <section class="week-description">
-          <h4 class="week-description__title">JS: typy danych i immutability.</h4>
+          <h4 class="week-description__title">
+            JS: typy danych i immutability.
+          </h4>
           <p class="week-description__paragraf">
-            zmienne != wartość<br>
-            Zmienna to takie połączenie ze wszechświatem wartości. Zmienna to nie wartość, 
-            ona tylko wskazuje na wartość która już istnieje. Są trzy sposoby zapisywania zmiennych w JS: LET vs CONST vs VAR.
-            <b>const</b> - ma stałe połączenie z daną wartością. <b>let</b> - wartość w let po zdefiniowaniu może być zmieniana.
-            Definiujemy tylko raz. Zmienne w JS przyjmują każdy typ danych.  
+            zmienne != wartość<br />
+            Zmienna to takie połączenie ze wszechświatem wartości. Zmienna to
+            nie wartość, ona tylko wskazuje na wartość która już istnieje. Są
+            trzy sposoby zapisywania zmiennych w JS: LET vs CONST vs VAR.
+            <b>const</b> - ma stałe połączenie z daną wartością. <b>let</b> -
+            wartość w let po zdefiniowaniu może być zmieniana. Definiujemy tylko
+            raz. Zmienne w JS przyjmują każdy typ danych.
           </p>
-          <p class="week-description__paragraf">Typy proste w JS (primitives)</p>
+          <p class="week-description__paragraf">
+            Typy proste w JS (primitives)
+          </p>
           <ul class="week-description__list">
-            <li class="week-description__list--point">String - tekst, otaczamy ' lub " (zalecane ')</li>
+            <li class="week-description__list--point">
+              String - tekst, otaczamy ' lub " (zalecane ')
+            </li>
             <li class="week-description__list--point">Number - liczba</li>
             <li class="week-description__list--point">Bigint - duża liczba</li>
-            <li class="week-description__list--point">boolean - true lub false</li>
-            <li class="week-description__list--point">null - wartość celowo niezdefiniowana</li>
-            <li class="week-description__list--point">undefinded - brak definicji</li>
-            <li class="week-description__list--point">*symbol - tworzy "unikalne opakowanie"</li>
+            <li class="week-description__list--point">
+              boolean - true lub false
+            </li>
+            <li class="week-description__list--point">
+              null - wartość celowo niezdefiniowana
+            </li>
+            <li class="week-description__list--point">
+              undefinded - brak definicji
+            </li>
+            <li class="week-description__list--point">
+              *symbol - tworzy "unikalne opakowanie"
+            </li>
           </ul>
-          
-       <p><strong>IMMUTABILITY</strong>- jest to nazwa konceptu, który mówi, że nie możemy zmieniać wartości primitive values w JS.
-         To co zmieniamy to płączenia między nimi, a zmiennymi.</p>
+
+          <p>
+            <strong>IMMUTABILITY</strong>- jest to nazwa konceptu, który mówi,
+            że nie możemy zmieniać wartości primitive values w JS. To co
+            zmieniamy to płączenia między nimi, a zmiennymi.
+          </p>
         </section>
 
         <section class="week-description">
           <h4 class="week-description__title">DOM.</h4>
           <p class="week-description__paragraf">
-            DOM - document object model (obiektowy model dokumentu). DOM to "złożony" w przeglądarce HTML czyli to co widzimy w DevTools.
-            JavaScript może modyfikować DOM. Funkcja querySelector zwraca node (węzeł) z HTML-a, a selektor jest zapisywany zgodnie z CSS.
+            DOM - document object model (obiektowy model dokumentu). DOM to
+            "złożony" w przeglądarce HTML czyli to co widzimy w DevTools.
+            JavaScript może modyfikować DOM. Funkcja querySelector zwraca node
+            (węzeł) z HTML-a, a selektor jest zapisywany zgodnie z CSS.
           </p>
           <p class="week-description__paragraf workweek-border">
-          document.querySelector('selector')
+            document.querySelector('selector')
           </p>
         </section>
-        
 
         <section class="homework">
           <h4 class="homework__title">Praca domowa:</h4>
