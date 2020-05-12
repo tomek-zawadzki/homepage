@@ -198,11 +198,19 @@ body {
 }
 
 .jump {
-  color: #e0ff4f;
+  width: 20px;
+  text-align: center;
   text-decoration: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  position: fixed;
+  bottom: 12px;
+  right: 12px;
+  color: #e0ff4f;
+  background-color: #00a9a5;
+  padding: 4px;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin: 8px;
+  
 }
 
 .footer {
