@@ -11,10 +11,22 @@ heading.innerHTML = `Notatki z pierwszego tygodnia.`;
 
 const allDom = document.querySelector('body');
 
-console.log(allDom)
+console.log(allDom);
 
-function greet(name, age) {
-    return `Witam Cię przyjacielu jestem ${name} i liczę sobie ${age} wiosen`
-}
+function greetOlder(name, age) {
+    return `Witam Cię przyjacielu w stylu fat arrow, jestem ${name} i liczę sobie ${age} wiosen`;
+};
 
-console.log(greet(name, age));
+console.log(greetOlder(name, age));
+
+const greetOld = (name, age) => {
+    return `Witam Cię przyjacielu w stylu fat arrow, jestem ${name} i liczę sobie ${age} wiosen`;
+};
+
+
+console.log(greetOld(name, age));
+console.log(greetOld('joachimek', 13));
+
+const greet = (name, age) => `Witam Cię przyjacielu w stylu skróconego fat arrow, jestem ${name} i liczę sobie ${age} wiosen`;
+
+console.log(greet('Patrynio', 100));
