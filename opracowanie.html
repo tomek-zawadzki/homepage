@@ -10,7 +10,11 @@
 
   <body>
     <header class="header">
-      <img class="header__picture" src="picture/wtf-wpidea-thumb.png" alt="logo">
+      <img
+        class="header__picture"
+        src="picture/wtf-wpidea-thumb.png"
+        alt="logo"
+      />
       <nav class="navigation">
         <a class="navigation__link navigation__link--homepage" href="index.html"
           >STRONA GŁÓWNA</a
@@ -20,25 +24,29 @@
       </nav>
     </header>
 
-    <main  id="top" class="main">
+    <main id="top" class="main">
       <header class="main__header">
         <h1 class="main__heading">Nauka frontendu – WTF co ten frontend</h1>
       </header>
 
       <nav class="navigation-weeks">
+        <div class="wrapper__navigation-links">
         <h2 class="navigation-weeks__title">Dodatkowe notatki</h2>
         <a class="navigation-weeks__href" href="#week-one">TYDZIEŃ I</a>
         <a class="navigation-weeks__href" href="#week-two">TYDZIEŃ II</a>
         <a class="navigation-weeks__href" href="#week-three">TYDZIEŃ III</a>
         <a class="navigation-weeks__href" href="#week-four">TYDZIEŃ IV</a>
         <a class="navigation-weeks__href" href="#week-five">TYDZIEŃ V</a>
+        </div>
       </nav>
 
       <article class="workweek">
         <h3 id="week-one" class="workweek__title">TYDZIEŃ I</h3>
 
         <section class="week-description">
-          <h4 class="week-description__title week-description__title--js">Co nowego?</h4>
+          <h4 class="week-description__title week-description__title--js">
+            Co nowego?
+          </h4>
 
           <ul class="week-description__list">
             <li class="week-description__list--point">
@@ -574,52 +582,59 @@
         <section class="week-description">
           <h4 class="week-description__title">KLAN</h4>
           <p class="week-description__paragraf">
-            DOM można nazwać jako rodzina elementów. Struktrę hatmla w DOM to "drzewo" Pojedyńczy
-             element to tak zwany węzeł/node. Dalej analogicznie możemy tą strukturę przyrównać do
-              drzewa genealogicznego np. main to rodzic - sekcja maina to jego dziecko - 
-              artyuł tej sekcji to dziecko tej sekcji itd. I tu dochodzimy do kwesti dziedziczenia (inherit).
-              Gdy nie określimy jakiś konkretnych właściwości dla danego elementu będą one dziedziczone od rodzica.
+            DOM można nazwać jako rodzina elementów. Struktrę hatmla w DOM to
+            "drzewo" Pojedyńczy element to tak zwany węzeł/node. Dalej
+            analogicznie możemy tą strukturę przyrównać do drzewa
+            genealogicznego np. main to rodzic - sekcja maina to jego dziecko -
+            artyuł tej sekcji to dziecko tej sekcji itd. I tu dochodzimy do
+            kwesti dziedziczenia (inherit). Gdy nie określimy jakiś konkretnych
+            właściwości dla danego elementu będą one dziedziczone od rodzica.
           </p>
-       
         </section>
 
         <section class="week-description">
           <h4 class="week-description__title">JavaScript: Funkcje</h4>
           <p class="week-description__paragraf">
-           Funkcja na wejściu dostaje dane czyli argumenty. Dla każdego argumentu zwraca jakąś wartość oraz posiada wzór.
+            Funkcja na wejściu dostaje dane czyli argumenty. Dla każdego
+            argumentu zwraca jakąś wartość oraz posiada wzór.
           </p>
           <p class="week-description__paragraf">
             Przykład funkcji:
           </p>
 
           <p class="week-description__paragraf workweek-border">
-            function greet(age) {<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;  return age*10;<br>
-          }
+            function greet(age) {<br />
+            &nbsp;&nbsp;&nbsp;&nbsp; return age*10;<br />
+            }
           </p>
 
           <p class="week-description__paragraf">
-            <strong>Funkcje w JS</strong><br>
-            Deklarujemy nazwę funkcji (nie zawsze). W środku dokonujemy obliczeń/ wykonujemy zadania. Funkcja 
-            przyjmuje argumenty (ale nie musi). Funkcja zawsze zwraca coś (nawet jak nie mamy <i>return</i>, wtedy zwraca undefinded)
+            <strong>Funkcje w JS</strong><br />
+            Deklarujemy nazwę funkcji (nie zawsze). W środku dokonujemy
+            obliczeń/ wykonujemy zadania. Funkcja przyjmuje argumenty (ale nie
+            musi). Funkcja zawsze zwraca coś (nawet jak nie mamy <i>return</i>,
+            wtedy zwraca undefinded)
           </p>
           <p class="week-description__paragraf">
-            Po co tworzymy funkcje: deklarujemy kod który się powtarza, zwiększamy czytelność kodu, łatwiejsze szukanie 
-            błędów, odpowiedzialność za wykonywanie zadania w jednym miejscu.
+            Po co tworzymy funkcje: deklarujemy kod który się powtarza,
+            zwiększamy czytelność kodu, łatwiejsze szukanie błędów,
+            odpowiedzialność za wykonywanie zadania w jednym miejscu.
           </p>
 
           <p class="week-description__paragraf">
-            <strong>(Fat) arrow function</strong> - skraca zapis deklaracji funkcji, zwiększa czytelność 
-            (nie dla wszystkich, co kto lubi), nie tworzy nowego kontekstu <i>this</i> <strong>=></strong>, 
-            nie ma dostępu do <i>arguments</i> i <i>super</i>, nie jest zamiennikiem "tradycyjnej" funkcji (ale
-            w większości przypadków nie zobaczy się różnicy).
+            <strong>(Fat) arrow function</strong> - skraca zapis deklaracji
+            funkcji, zwiększa czytelność (nie dla wszystkich, co kto lubi), nie
+            tworzy nowego kontekstu <i>this</i> <strong>=></strong>, nie ma
+            dostępu do <i>arguments</i> i <i>super</i>, nie jest zamiennikiem
+            "tradycyjnej" funkcji (ale w większości przypadków nie zobaczy się
+            różnicy).
           </p>
           <p class="week-description__paragraf">Przykład:</p>
           <p class="week-description__paragraf workweek-border">
-            const greet = (age) => {<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;  console.log(age)<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;  return age*10;<br>
-          }
+            const greet = (age) => {<br />
+            &nbsp;&nbsp;&nbsp;&nbsp; console.log(age)<br />
+            &nbsp;&nbsp;&nbsp;&nbsp; return age*10;<br />
+            }
           </p>
           <p class="week-description__paragraf">Skrócony zapis przykład:</p>
           <p class="week-description__paragraf workweek-border">
@@ -630,76 +645,85 @@
         <section class="week-description">
           <h4 class="week-description__title">JavaScript: Obiekty.</h4>
           <p class="week-description__paragraf">
-            Prawie wszystkow  JS jest obiektem (nawet typy proste, mimo iż nie są obiektem - to tak się zachowują).
-            Obiekt jest strukturą danych.
+            Prawie wszystkow JS jest obiektem (nawet typy proste, mimo iż nie są
+            obiektem - to tak się zachowują). Obiekt jest strukturą danych.
           </p>
           <p class="week-description__paragraf">Przykład obiektu:</p>
           <p class="week-description__paragraf workweek-border">
-            const deathStar = {<br>
-              &nbsp;&nbsp; diameter: 120000,<br>
-              fire: (target) => {<br>
-                &nbsp;&nbsp;&nbsp;&nbsp; console.log(`${target} destroyed * `) <br>
-                &nbsp;&nbsp;},<br>
-                &nbsp;&nbsp;isOperating: true,<br>
-                &nbsp;&nbsp;levels: 357,<br>
-                &nbsp;&nbsp;name: 'Death Star',<br>
-                &nbsp;&nbsp;population: 1000,<br>
-              }
+            const deathStar = {<br />
+            &nbsp;&nbsp; diameter: 120000,<br />
+            fire: (target) => {<br />
+            &nbsp;&nbsp;&nbsp;&nbsp; console.log(`${target} destroyed * `)
+            <br />
+            &nbsp;&nbsp;},<br />
+            &nbsp;&nbsp;isOperating: true,<br />
+            &nbsp;&nbsp;levels: 357,<br />
+            &nbsp;&nbsp;name: 'Death Star',<br />
+            &nbsp;&nbsp;population: 1000,<br />
+            }
           </p>
         </section>
 
         <section class="week-description">
-          <h4 class="week-description__title">JavaScript: Immutability w obiektach.</h4>
+          <h4 class="week-description__title">
+            JavaScript: Immutability w obiektach.
+          </h4>
           <p class="week-description__paragraf">
-            Nie możemy zmieniać wartości primitive values w JS. To co zmieniamy to połączenia między nimi, a zmiennymi.
+            Nie możemy zmieniać wartości primitive values w JS. To co zmieniamy
+            to połączenia między nimi, a zmiennymi.
           </p>
         </section>
 
         <section class="week-description">
-          <h4 class="week-description__title">Jak postępować jak coś nie działa?</h4>
+          <h4 class="week-description__title">
+            Jak postępować jak coś nie działa?
+          </h4>
           <p class="week-description__paragraf">
-          Proces wyszukiwania błędów  w programowaniu to tak zwany: <strong>DEBUGGING</strong> czyli odrobaczanie, odpluskwianie.
-          Usuwanie bagów - usuwanie błędów.
+            Proces wyszukiwania błędów w programowaniu to tak zwany:
+            <strong>DEBUGGING</strong> czyli odrobaczanie, odpluskwianie.
+            Usuwanie bagów - usuwanie błędów.
           </p>
-         <ol class="week-description__list">
-         <li class="week-description__list--point">
-          Sprawdź czy plik jest zapisany.
-         </li>
-         <li class="week-description__list--point">
-           Sprawdź czy edytujesz włąściwy plik.
-        </li>
-        <li class="week-description__list--point">
-           Sprawdź czy osdświeżyłeś przeglądarkę.
-        </li>
-        <li class="week-description__list--point">
-           Sprawdź czy nie masz błędów w Devtoolsach i w edytorze.
-        </li>
-        <li class="week-description__list--point">
-           Pogadaj z kaczką - czyli pogadaj z innym programistą.
-        </li>
-        <li class="week-description__list--point">
-           Google it. - najlepiej aby odpowiedzi nie były starsze niż rok wstecz. Warto zajrzeć również na GitHub issues.
-        </li>
-         </ol>
+          <ol class="week-description__list">
+            <li class="week-description__list--point">
+              Sprawdź czy plik jest zapisany.
+            </li>
+            <li class="week-description__list--point">
+              Sprawdź czy edytujesz włąściwy plik.
+            </li>
+            <li class="week-description__list--point">
+              Sprawdź czy osdświeżyłeś przeglądarkę.
+            </li>
+            <li class="week-description__list--point">
+              Sprawdź czy nie masz błędów w Devtoolsach i w edytorze.
+            </li>
+            <li class="week-description__list--point">
+              Pogadaj z kaczką - czyli pogadaj z innym programistą.
+            </li>
+            <li class="week-description__list--point">
+              Google it. - najlepiej aby odpowiedzi nie były starsze niż rok
+              wstecz. Warto zajrzeć również na GitHub issues.
+            </li>
+          </ol>
         </section>
         <section class="homework">
           <h4 class="homework__title">Praca domowa:</h4>
 
           <ol class="homework__list">
             <li class="homework__list--point">
-             Utwórz funkcję powitalną, niech jako parametr przyjmuje imię i wiek.
+              Utwórz funkcję powitalną, niech jako parametr przyjmuje imię i
+              wiek.
             </li>
             <li class="homework__list--point">
-            Potnij wizytówkę.
+              Potnij wizytówkę.
             </li>
             <li class="homework__list--point">
-            Wyśrodkuj linki w nawigacji za pomocą flexboxa.
+              Wyśrodkuj linki w nawigacji za pomocą flexboxa.
             </li>
             <li class="homework__list--point">
-            Stwórz gradient i dodaj go jako tło do strony.
+              Stwórz gradient i dodaj go jako tło do strony.
             </li>
             <li class="homework__list--point">
-            Przejdź flexbox froggy.
+              Przejdź flexbox froggy.
             </li>
           </ol>
         </section>

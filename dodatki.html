@@ -10,7 +10,11 @@
 
   <body>
     <header class="header">
-      <img class="header__picture" src="picture/wtf-wpidea-thumb.png" alt="logo">
+      <img
+        class="header__picture"
+        src="picture/wtf-wpidea-thumb.png"
+        alt="logo"
+      />
       <nav class="navigation">
         <a class="navigation__link navigation__link--homepage" href="index.html"
           >STRONA GŁÓWNA</a
@@ -27,11 +31,14 @@
 
       <nav class="navigation-weeks">
         <h2 class="navigation-weeks__title">Dodatkowe notatki</h2>
+        <div class="wrapper__navigation-links">
         <a class="navigation-weeks__href" href="#week-one">TYDZIEŃ I</a>
         <a class="navigation-weeks__href" href="#week-two">TYDZIEŃ II</a>
         <a class="navigation-weeks__href" href="#week-three">TYDZIEŃ III</a>
         <a class="navigation-weeks__href" href="#week-four">TYDZIEŃ IV</a>
         <a class="navigation-weeks__href" href="#week-five">TYDZIEŃ V</a>
+        <a class="navigation-weeks__href" href="#week-six">TYDZIEŃ VI</a>
+        </div>
       </nav>
 
       <article class="workweek">
@@ -235,7 +242,8 @@
               const zmienna = - definiowanie stałej zmiennej
             </li>
             <li class="week-description__list--point">
-              let zmienna = - definiowanie zmiennej którą można później nadpisywać
+              let zmienna = - definiowanie zmiennej którą można później
+              nadpisywać
             </li>
           </ul>
         </section>
@@ -518,19 +526,19 @@
 
       <article class="workweek">
         <h3 id="week-five" class="workweek__title">TYDZIEŃ V</h3>
-        
+
         <section class="week-description">
           <h4 class="week-description__title">Znaczniki HTML:</h4>
           <ul class="week-description__list">
             <li class="week-description__list--point">
-            &lt;ul&gt; - unordered list
+              &lt;ul&gt; - unordered list
             </li>
             <li class="week-description__list--point">
               &lt;ol&gt; - ordered list
             </li>
             <li class="week-description__list--point">
-              &lt;li&gt; - list item 
-            </li> 
+              &lt;li&gt; - list item
+            </li>
             <li class="week-description__list--point">
               &lt;dl&gt; - description list
             </li>
@@ -566,7 +574,7 @@
             </li>
           </ul>
         </section>
-        
+
         <section class="week-description">
           <h4 class="week-description__title">CSS:</h4>
 
@@ -578,44 +586,51 @@
               list-style(-type) - styl listy
             </li>
             <li class="week-description__list--point">
-              display: flex - 
+              display: flex -
             </li>
             <li class="week-description__list--point">
-              flex-direction: row; column; row-reverse; column-revere; - kierunek elementów
+              flex-direction: row; column; row-reverse; column-revere; -
+              kierunek elementów
             </li>
             <li class="week-description__list--point">
-              flex-wrap: nowrap; wrap; wrap-reverse; - zawijanie wiersza/ kolumny
+              flex-wrap: nowrap; wrap; wrap-reverse; - zawijanie wiersza/
+              kolumny
             </li>
             <li class="week-description__list--point">
-              flex-flow: row nowrap; &lt;flex-direction&gt;; &lt;flex-wrap&gt;; - 
+              flex-flow: row nowrap; &lt;flex-direction&gt;; &lt;flex-wrap&gt;;
+              -
             </li>
             <li class="week-description__list--point">
-              justify-content: flex-start; flex-end; centr; space-between; space-around; - ustawienie elementów wzdłuż osi flex-direction
+              justify-content: flex-start; flex-end; centr; space-between;
+              space-around; - ustawienie elementów wzdłuż osi flex-direction
             </li>
             <li class="week-description__list--point">
-              align-content: stretch; flex-start; flex-end; center; space-between; space-around; - ustawianie wierszy/ kolumn wzdłuż osi przeciwnej
-              do flex-direction
+              align-content: stretch; flex-start; flex-end; center;
+              space-between; space-around; - ustawianie wierszy/ kolumn wzdłuż
+              osi przeciwnej do flex-direction
             </li>
             <li class="week-description__list--point">
-              align-items: stretch; flex-start; flex-end; center; baseline; - ustawienie elementów wzdłuż osi przeciwnej do flex-direction
+              align-items: stretch; flex-start; flex-end; center; baseline; -
+              ustawienie elementów wzdłuż osi przeciwnej do flex-direction
             </li>
             <li class="week-description__list--point">
-             align-self: stretch; flex-start; flex-end; center; baseline; - ustawienie elementu wzdłuż osi przeciwnej do flex-direction
+              align-self: stretch; flex-start; flex-end; center; baseline; -
+              ustawienie elementu wzdłuż osi przeciwnej do flex-direction
             </li>
             <li class="week-description__list--point">
-             order: 0; liczba cłkowita - kolejność
+              order: 0; liczba cłkowita - kolejność
             </li>
             <li class="week-description__list--point">
-             flex-grow: 0; licba/proporcja;
+              flex-grow: 0; licba/proporcja;
             </li>
             <li class="week-description__list--point">
-             flex-shrink: 1; liczb/proporcja;
+              flex-shrink: 1; liczb/proporcja;
             </li>
             <li class="week-description__list--point">
-             flex-basis: none; rozmiar bazowy;
+              flex-basis: none; rozmiar bazowy;
             </li>
             <li class="week-description__list--point">
-             flex: &lt;flex-grow&gt; &lt;flex-shrink&gt; &lt;felx-basis&gt;
+              flex: &lt;flex-grow&gt; &lt;flex-shrink&gt; &lt;felx-basis&gt;
             </li>
             <li class="week-description__list--point">
               background: - tło
@@ -624,28 +639,33 @@
               background-image: url('sciezka-do-pliku'); - zdjęcie jako tło
             </li>
             <li class="week-description__list--point">
-              background-position: 0; &lt;pozycja-y&gt;; top; right; center; xx%; xxpx; - ustawienie pozycji tła
+              background-position: 0; &lt;pozycja-y&gt;; top; right; center;
+              xx%; xxpx; - ustawienie pozycji tła
             </li>
             <li class="week-description__list--point">
-              background-repeat: repeat; repeat-x; repeat-y; no-repeat; round; space; - styl powtarzania obrazka w tle
+              background-repeat: repeat; repeat-x; repeat-y; no-repeat; round;
+              space; - styl powtarzania obrazka w tle
             </li>
             <li class="week-description__list--point">
-              background-attachment: scroll; fixed; local; - jak ma się zachowywać tło
+              background-attachment: scroll; fixed; local; - jak ma się
+              zachowywać tło
             </li>
             <li class="week-description__list--point">
-              background-origin: padding-box; border-box; content-box; - 
+              background-origin: padding-box; border-box; content-box; -
             </li>
             <li class="week-description__list--point">
-              background-clip: padding-box; border-box; content-box; - 
+              background-clip: padding-box; border-box; content-box; -
             </li>
             <li class="week-description__list--point">
               background-color: wartość koloru; - kolor tła
             </li>
             <li class="week-description__list--point">
-              background-image: linear-gradient( color, color) - tło z gradientem
+              background-image: linear-gradient( color, color) - tło z
+              gradientem
             </li>
             <li class="week-description__list--point">
-              background-size: auto; cover; contain; &lt;width&gt; &lt;height&gt;;  - rozmiar tła 
+              background-size: auto; cover; contain; &lt;width&gt;
+              &lt;height&gt;; - rozmiar tła
             </li>
           </ul>
         </section>
@@ -653,24 +673,24 @@
         <section class="week-description">
           <h4 class="week-description__title">JS:</h4>
           <ul class="week-description__list">
-          <li class="week-description__list--point">
-           function - funkcja
-          </li>
-          <li class="week-description__list--point">
-            return - słowo kluczowe, sprawia że funckja coś zwraca
-          </li>
-          <li class="week-description__list--point">
-            klucz: value - zapis wartości w obiekcie, klucz- unikalny w ramach obiektu, wartość- prymitywy, funckje, zagnieżdżenia
-          </li>
-          <li class="week-description__list--point">
-            . - dot noatation
-          </li>
-          <li class="week-description__list--point">
-           [] - bracket notation
-          </li>
-        </ul>
+            <li class="week-description__list--point">
+              function - funkcja
+            </li>
+            <li class="week-description__list--point">
+              return - słowo kluczowe, sprawia że funckja coś zwraca
+            </li>
+            <li class="week-description__list--point">
+              klucz: value - zapis wartości w obiekcie, klucz- unikalny w ramach
+              obiektu, wartość- prymitywy, funckje, zagnieżdżenia
+            </li>
+            <li class="week-description__list--point">
+              . - dot noatation
+            </li>
+            <li class="week-description__list--point">
+              [] - bracket notation
+            </li>
+          </ul>
         </section>
-
 
         <section class="workweek__website">
           <h4 class="workweek__website--title">
@@ -678,9 +698,7 @@
           </h4>
           <ul class="week-description__list">
             <li class="week-description__list--point">
-              <a
-                class="important-link"
-                href="https://stackoverflow.com/"
+              <a class="important-link" href="https://stackoverflow.com/"
                 >https://stackoverflow.com/</a
               >- forum dla programistów z różnymi problemami
             </li>
@@ -688,12 +706,11 @@
               <a class="important-link" href="https://devdocs.io/"
                 >https://devdocs.io/</a
               >
-              - dokumentacje do wszystkich technologi, z których korzystamy w tym szkoleniu
+              - dokumentacje do wszystkich technologi, z których korzystamy w
+              tym szkoleniu
             </li>
             <li class="week-description__list--point">
-              <a
-                class="important-link"
-                href="https://developer.mozilla.org/pl/"
+              <a class="important-link" href="https://developer.mozilla.org/pl/"
                 >https://developer.mozilla.org/pl/</a
               >
               - portal Mozilli z poradami
@@ -702,7 +719,8 @@
               <a class="important-link" href="https://caniuse.com/"
                 >https://caniuse.com/</a
               >
-              - informacje czy możemy użyć danych własności na różnych przeglądarkach
+              - informacje czy możemy użyć danych własności na różnych
+              przeglądarkach
             </li>
             <li class="week-description__list--point">
               <a class="important-link" href="https://css-tricks.com/almanac/"
@@ -711,19 +729,26 @@
               - strona z wszystkim na temat CSS - tutaj odnośnik do słownika
             </li>
             <li class="week-description__list--point">
-              <a class="important-link" href="https://www.facebook.com/groups/742940452405327/"
+              <a
+                class="important-link"
+                href="https://www.facebook.com/groups/742940452405327/"
                 >https://www.facebook.com/groups/742940452405327/</a
               >
               - Grupa na FB - HTML, CSS i JS: pierwsze kroki
             </li>
             <li class="week-description__list--point">
-              <a class="important-link" href="https://www.facebook.com/groups/1485218891734165/"
+              <a
+                class="important-link"
+                href="https://www.facebook.com/groups/1485218891734165/"
                 >https://www.facebook.com/groups/1485218891734165/</a
               >
-              - Grupa na FB - Front-end: pierwsza praca w HTML5, CSS3, JavaScript
+              - Grupa na FB - Front-end: pierwsza praca w HTML5, CSS3,
+              JavaScript
             </li>
             <li class="week-description__list--point">
-              <a class="important-link" href="https://www.facebook.com/groups/157790704649699/"
+              <a
+                class="important-link"
+                href="https://www.facebook.com/groups/157790704649699/"
                 >https://www.facebook.com/groups/157790704649699/</a
               >
               - Grupa na FB - programowanie - wsparcie na starcie
@@ -733,15 +758,19 @@
                 >https://crossweb.pl/</a
               >
               - Grupy lokalnych spotkań programistycznych.
-            </li> 
+            </li>
             <li class="week-description__list--point">
-              <a class="important-link" href="https://necolas.github.io/normalize.css//"
+              <a
+                class="important-link"
+                href="https://necolas.github.io/normalize.css//"
                 >https://necolas.github.io/normalize.css/</a
               >
               - normalize.css
             </li>
             <li class="week-description__list--point">
-              <a class="important-link" href="https://cssgradient.io/gradient-backgrounds/"
+              <a
+                class="important-link"
+                href="https://cssgradient.io/gradient-backgrounds/"
                 >https://cssgradient.io/gradient-backgrounds/</a
               >
               - strona do tworzenia gradientu
@@ -749,8 +778,67 @@
             <li class="week-description__list--point">
               <a class="important-link" href="https://www.figma.com/"
                 >https://www.figma.com/
-            </a>
+              </a>
               - strona programy graficznego Figma.
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <article class="workweek">
+        <h3 id="week-six" class="workweek__title">TYDZIEŃ VI</h3>
+        <section class="week-description">
+          <h4 class="week-description__title">Znaczniki HTML:</h4>
+          <ul class="week-description__list">
+            <li class="week-description__list--point">
+              &lt;main&gt; 
+            </li>
+            <li class="week-description__list--point">
+    
+            </li>
+            <li class="week-description__list--point">
+             
+            </li>
+            <li class="week-description__list--point">
+             
+            </li>
+            <li class="week-description__list--point">
+             
+            </li>
+          </ul>
+        </section>
+        <section class="workweek__website">
+          <h4 class="workweek__website--title">
+            Przydatne strony internetowe z tygodnia.
+          </h4>
+          <ul class="week-description__list">
+            <li class="week-description__list--point">
+              <a
+                class="important-link"
+                href="https://validator.w3.org/nu/#textarea"
+                >https://validator.w3.org/nu/#textarea</a
+              >
+              – validator do sprawdzania poprawności napisanego kodu
+            </li>
+            <li class="week-description__list--point">
+              <a class="important-link" href="https://www.w3.org/TR/html52/"
+                >https://www.w3.org/TR/html52/</a
+              >
+              - strona o HTML 5
+            </li>
+            <li class="week-description__list--point">
+              <a class="important-link" href="https://www.w3.org/TR/CSS/"
+                >https://www.w3.org/TR/CSS/</a
+              >
+              - strona o CSS
+            </li>
+            <li class="week-description__list--point">
+              <a
+                class="important-link"
+                href="https://codepen.io/maciejkorsan/pen/8db755719dea64797342e1840ff2b7ee"
+                >https://codepen.io/maciejkorsan/pen/8db755719dea64797342e1840ff2b7e</a
+              >
+              - link do pracy domowej 3. Rozwiąż zagadkę
             </li>
           </ul>
         </section>

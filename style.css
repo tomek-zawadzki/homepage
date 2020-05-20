@@ -2,7 +2,7 @@ html {
     box-sizing: border-box;
    }
    *, *:before, *:after {
-    box-sizing: inhe
+    box-sizing: inherit;
 }
 
 
@@ -225,4 +225,64 @@ body {
   display: flex;
   justify-content: center;
   border-top: 2px solid #e0ff4f;
+}
+
+@media screen and (max-width: 320px) {
+ body {
+   font-size: 80%;
+ }
+
+ .main__header {
+   margin-left: 16px;
+   margin-right: 16px;
+}
+
+.navigation-weeks {
+  
+}
+
+.wrapper__navigation-links {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  
+}
+
+.navigation-weeks__href {
+  margin: 4px;
+  width: 100px;
+}
+
+ .week-description {
+   padding-left: 8px;
+ }
+
+ .week-description__list {
+  display: contents;
+ }
+
+ .important-link {
+   word-break: break-all;
+  
+ }
+
+ .workweek {
+   margin: 20px;
+ }
+
+ .workweek__website {
+   padding-left: 24px;
+   margin: 0;
+ }
+
+ .picture-boxmodel {
+   width: 230px;
+   
+ }
+
+ .workweek-border {
+   word-break: break-all;
+ }
+
+  
 }
