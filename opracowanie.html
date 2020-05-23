@@ -8,7 +8,7 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
-  <body>
+  <body class="body--js">
     <header class="header">
       <img
         class="header__picture"
@@ -26,7 +26,7 @@
 
     <main id="top" class="main">
       <header class="main__header">
-        <h1 class="main__heading">Nauka frontendu – WTF co ten frontend</h1>
+        <h1 class="main__heading main__heading--js">Nauka frontendu – WTF co ten frontend</h1>
       </header>
 
       <nav class="navigation-weeks">
@@ -39,8 +39,14 @@
         <a class="navigation-weeks__href" href="#week-five">TYDZIEŃ V</a>
         </div>
       </nav>
-
-      <article class="workweek">
+<div class="event">
+<button class="button button__click click--js ">Klik</button>
+<button class="button button__mouse-enter mouse-enter--js">Myszka wejdź</button>
+<button class="button button__mouse-leave mouse-leave--js">Myszka ucieka</button>
+<button class="button button__mouse-over mouse-over--js">Myszką najedź</button>
+</div>
+       
+      <article class="workweek workweek--js">
         <h3 id="week-one" class="workweek__title">TYDZIEŃ I</h3>
 
         <section class="week-description">
@@ -729,7 +735,7 @@
         </section>
       </article>
 
-      <a class="jump" href="#top">^</a>
+      <a class="jump jump--js" href="#top">^</a>
     </main>
 
     <footer class="footer">

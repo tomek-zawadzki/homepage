@@ -72,6 +72,7 @@ body {
   border: 1px solid black;
   border-radius: 4px;
   padding: 8px;
+  transform: scale(1.2);
 }
 
 .section-one {
@@ -177,7 +178,7 @@ body {
   border-top: 2px solid #e0ff4f;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 380px) {
   body {
     font-size: 80%;
     width: 100vw;

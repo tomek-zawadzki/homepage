@@ -227,7 +227,22 @@ body {
   border-top: 2px solid #e0ff4f;
 }
 
-@media screen and (max-width: 320px) {
+.event {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.button {
+  margin: 16px;
+  color: white;
+  background-color: #24091a;
+  border: 1px solid #00a9a5;
+  padding: 7px;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 380px) {
  body {
    font-size: 80%;
  }
@@ -243,6 +258,7 @@ body {
 
 .wrapper__navigation-links {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   width: 100%;
   
@@ -276,7 +292,8 @@ body {
  }
 
  .picture-boxmodel {
-   width: 230px;
+   display: block;
+   max-width: 100%;
    
  }
 
@@ -284,5 +301,4 @@ body {
    word-break: break-all;
  }
 
-  
 }
