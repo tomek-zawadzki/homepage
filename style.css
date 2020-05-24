@@ -242,7 +242,7 @@ body {
   border-radius: 4px;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 756px) {
  body {
    font-size: 80%;
  }
@@ -300,5 +300,29 @@ body {
  .workweek-border {
    word-break: break-all;
  }
+ .navigation {
+  display: none;
+
+}
+
+.navigation--open {
+  display: block;
+
+}
+
+.navigation__link {
+  display: block;
+  width: fit-content;
+}
+
+.navigation__button {
+  position: absolute;
+  top: 16px;
+  
+}
+
+.header__picture {
+  display: none;
+}
 
 }

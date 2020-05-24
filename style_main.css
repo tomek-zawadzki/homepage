@@ -75,6 +75,7 @@ body {
   transform: scale(1.2);
 }
 
+
 .section-one {
   background-color: #104f55;
   margin: 30px;
@@ -178,7 +179,7 @@ body {
   border-top: 2px solid #e0ff4f;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 765px) {
   body {
     font-size: 80%;
     width: 100vw;
@@ -202,6 +203,30 @@ body {
 
   .main {
     padding-bottom: 16px;
+  }
+
+  .navigation {
+    display: none;
+
+  }
+
+  .navigation--open {
+    display: block;
+
+  }
+
+  .navigation__link {
+    display: block;
+    width: fit-content;
+  }
+
+  .navigation__button {
+    position: absolute;
+    top: 16px;
+  }
+
+  .header__picture {
+    display: none;
   }
   
 }
