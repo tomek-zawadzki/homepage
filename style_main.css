@@ -116,6 +116,18 @@ body {
   border-bottom: #092327 dashed 2px;
   margin: 0, 40px;
 }
+
+.workweek__title::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background-color: #fff;
+  margin-right: 8px;
+}
+
 .container__week-description {
   display: flex;
   flex-direction: row;
@@ -187,9 +199,7 @@ body {
   .header {
     position: relative;
   }
-  .header__position {
-    position: fixed;
-  }
+ 
   .main__header {
     margin-left: 16px;
     margin-right: 16px;
@@ -212,7 +222,6 @@ body {
 
   .navigation {
     display: none;
-
   }
 
   .navigation--open {
@@ -222,7 +231,6 @@ body {
   .navigation__link {
     display: block;
     width: fit-content;
-   
   }
 
   .navigation__button {
@@ -235,13 +243,14 @@ body {
     transition: 0.3s transform linear;
   }
 
-  .navigation__button::before, .navigation__button::after {
-    content: '';
+  .navigation__button::before,
+  .navigation__button::after {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    border-top: 5px solid #fff;  
+    border-top: 5px solid #fff;
     transform: translateY(10px);
   }
 
@@ -249,7 +258,7 @@ body {
     transform: translateY(25px);
     transition: 0.3s transform linear;
   }
-  
+
   .navigation__button:focus {
     transform: rotate(45deg) translateY(5px);
     border: none;
@@ -262,12 +271,10 @@ body {
     position: absolute;
     top: 16px;
     right: 16px;
-    z-index: 10;
+  
   }
 
   .header__picture {
     display: none;
   }
- 
-  
 }
