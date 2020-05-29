@@ -94,7 +94,7 @@ body {
     padding-bottom: 30px;
     border-bottom: #092327 dashed 2px;
     margin: 0, 40px; }
-  .workweek__patagraf-bottom {
+  .workweek__paragraf-bottom {
     padding: 6px;
     color: #e0ff4f;
     text-align: center;
@@ -159,15 +159,15 @@ body {
   justify-content: center;
   border-top: 2px solid #e0ff4f; }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 768px) {
   body {
     font-size: 80%;
     width: 100vw; }
   .header {
     position: relative; }
-  .main__header {
-    margin-left: 16px;
-    margin-right: 16px; }
+    .header__header {
+      margin-left: 16px;
+      margin-right: 16px; }
   .container__workweek-plan {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px));
@@ -179,19 +179,23 @@ body {
     padding-bottom: 16px; }
   .navigation {
     display: none; }
-  .navigation--open {
-    display: block; }
-  .navigation__link {
-    display: block;
-    width: fit-content; }
-  .navigation__button {
-    width: 40px;
-    height: 35px;
-    border: 0;
-    border-top: 5px solid #fff;
-    background: transparent;
-    position: relative;
-    transition: 0.3s transform linear; }
+    .navigation__link {
+      display: block;
+      width: fit-content; }
+    .navigation__button {
+      width: 40px;
+      height: 35px;
+      border: 0;
+      border-top: 5px solid #fff;
+      background: transparent;
+      position: relative;
+      transition: 0.3s transform linear; }
+      .navigation__button--position {
+        position: absolute;
+        top: 16px;
+        right: 16px; }
+    .navigation--open {
+      display: block; }
   .navigation__button::before,
   .navigation__button::after {
     content: "";
@@ -209,9 +213,5 @@ body {
     border: none; }
   .navigation__button:focus::after {
     transform: rotate(-90deg) translateX(-10px); }
-  .navigation__button--position {
-    position: absolute;
-    top: 16px;
-    right: 16px; }
   .header__picture {
     display: none; } }
