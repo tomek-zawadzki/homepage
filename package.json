@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass": "npx node-sass -w scss/style_main.scss style_main.css",
+    "sasss": "npx node-sass -w style.scss style.css",
     "cow": "cowsay -h Booooomba!",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -1,8 +1,10 @@
 html {
-  box-sizing: border-box; }
+    box-sizing: border-box;
+   }
+   *, *:before, *:after {
+    box-sizing: inherit;
+}
 
-*, *:before, *:after {
-  box-sizing: inherit; }
 
 body {
   background-color: #092327;
@@ -10,12 +12,13 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
   padding: 0;
-  position: relative; }
+  position: relative;
+}
 
 .main {
   max-width: 1250px;
-  margin: 0 auto; }
-  .main__header {
+  margin: 0 auto;
+  &__header {
     font-size: 1.5em;
     color: #e0ff4f;
     display: flex;
@@ -23,15 +26,21 @@ body {
     align-items: center;
     margin-bottom: 40px;
     border-bottom: 2px solid #e0ff4f;
-    padding-top: 80px; }
+    padding-top: 80px;
+  }
+}
+
+
 
 .header {
-  position: fixed; }
-  .header__picture {
+  position: fixed;
+  &__picture {
     position: absolute;
     top: 5px;
     left: 5px;
-    width: 100px; }
+    width: 100px;
+  }
+}
 
 .navigation {
   display: flex;
@@ -39,125 +48,168 @@ body {
   justify-content: center;
   align-items: center;
   width: 100vw;
-  background-color: rgba(9, 35, 39, 0.5); }
-  .navigation__link {
+  background-color: rgba(9, 35, 39, 0.5);
+  &__link {
     color: #e0ff4f;
     background-color: #00a9a5;
     border: 1px solid black;
     border-radius: 4px;
     padding: 8px;
-    margin: 8px 0px; }
+    margin: 8px 0px;
+
+  }
+}
+
+.navigation__link {
+
+
+}
 
 .navigation__link:hover {
   color: #00a9a5;
   background-color: #e0ff4f;
   border: 1px solid black;
   border-radius: 4px;
-  padding: 8px; }
+  padding: 8px;
+}
 
 .navigation-weeks {
   background-color: #104f55;
   margin: 30px;
   padding: 20px;
   border-radius: 30px;
-  text-align: center; }
-  .navigation-weeks__title {
+  text-align: center;
+  &__title {
     display: flex;
     justify-content: center;
     font-size: 2em;
     padding-bottom: 30px;
     border-bottom: #092327 dashed 2px;
-    margin: 0, 40px; }
-  .navigation-weeks__href {
+    margin: 0, 40px;
+  }
+  &__href {
     color: white;
     background-color: #00a9a5;
     border: 1px solid #00a9a5;
     padding: 7px;
-    border-radius: 4px; }
+    border-radius: 4px;
+  }
+}
+
+.navigation-weeks__title {
+ 
+}
+
+.navigation-weeks__href {
+  
+}
 
 .navigation-weeks__href:hover {
   background-color: white;
-  color: #00a9a5; }
+  color: #00a9a5;
+}
+
+
 
 .section-one {
   background-color: #104f55;
   margin: 30px;
   padding: 20px;
-  border-radius: 30px; }
-  .section-one__main-title {
+  border-radius: 30px;
+  &__main-title {
     display: flex;
     justify-content: center;
     font-size: 2em;
     padding-bottom: 30px;
     border-bottom: #092327 dashed 2px;
-    margin: 0, 40px; }
+    margin: 0, 40px;
+  }
+}
+
 
 .workweek {
   background-color: #104f55;
   margin: 30px;
   padding: 20px;
-  border-radius: 30px; }
-  .workweek__title {
+  border-radius: 30px;
+  &__title {
     display: flex;
     justify-content: center;
     font-size: 2em;
     padding-bottom: 30px;
     border-bottom: #092327 dashed 2px;
-    margin: 0, 40px; }
-  .workweek__website {
+    margin: 0, 40px;
+  }
+  &__website {
     background-color: #00a9a5;
     margin: 10px;
     margin-top: 40px;
     padding: 20px;
-    border-radius: 30px; }
-  .workweek__border {
+    border-radius: 30px;
+  }
+  &__border {
     display: inline-block;
     border: 2px solid white;
     padding: 15px;
-    margin: 10px; }
+    margin: 10px;
+  }
+}
 
 .container__week-description {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+}
 
 .week-description {
-  margin-bottom: 80px; }
-  .week-description__container {
+  margin-bottom: 80px;
+  &__container {
     width: 250px;
-    border: 1px solid black; }
-  .week-description__image {
+    border: 1px solid black;
+  }
+  &__image {
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    right: 0; }
-  .week-description__paragraf--text-color {
+    right: 0;
+  }
+  &__paragraf--text-color {
     color: #e0ff4f;
-    display: block; }
+    display: block;
+  }
+}
+
 
 .picture-boxmodel {
-  width: 350px; }
+  width: 350px;
+}
 
 .span-point__two {
-  background-color: green; }
+  background-color: green;
+}
 
 .span-point__three {
-  background-color: #1b2dc9; }
+  background-color: rgb(27, 45, 201);
+}
 
 .span-point__four {
-  background-color: orangered; }
+  background-color: orangered;
+}
 
 .span-point__five {
-  background-color: darkred; }
+  background-color: darkred;
+}
 
 .homework {
   background-color: #00a9a5;
   margin: 10px;
   margin-top: 40px;
   padding: 20px;
-  border-radius: 30px; }
+  border-radius: 30px;
+}
 
 .important-link {
-  color: #e0ff4f; }
+  color: #e0ff4f;
+}
 
 .jump {
   width: 20px;
@@ -171,17 +223,21 @@ body {
   padding: 4px;
   border: 1px solid black;
   border-radius: 4px;
-  margin: 8px; }
+  margin: 8px;
+  
+}
 
 .footer {
   display: flex;
   justify-content: center;
-  border-top: 2px solid #e0ff4f; }
+  border-top: 2px solid #e0ff4f;
+}
 
 .event {
   display: flex;
   flex-direction: row;
-  justify-content: center; }
+  justify-content: center;
+}
 
 .button {
   margin: 16px;
@@ -189,47 +245,90 @@ body {
   background-color: #24091a;
   border: 1px solid #00a9a5;
   padding: 7px;
-  border-radius: 4px; }
+  border-radius: 4px;
+}
 
 @media screen and (max-width: 756px) {
-  body {
-    font-size: 80%; }
-  .main__header {
-    margin-left: 16px;
-    margin-right: 16px; }
-  .wrapper__navigation-links {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%; }
-  .navigation-weeks__href {
-    margin: 4px;
-    width: 100px; }
-  .week-description {
-    padding-left: 8px; }
-  .week-description__list {
-    display: contents; }
-  .important-link {
-    word-break: break-all; }
-  .workweek {
-    margin: 20px; }
-  .workweek__website {
-    padding-left: 24px;
-    margin: 0; }
-  .picture-boxmodel {
-    display: block;
-    max-width: 100%; }
-  .workweek-border {
-    word-break: break-all; }
-  .navigation {
-    display: none; }
-  .navigation--open {
-    display: block; }
-  .navigation__link {
-    display: block;
-    width: fit-content; }
-  .navigation__button {
-    position: absolute;
-    top: 16px; }
-  .header__picture {
-    display: none; } }
+ body {
+   font-size: 80%;
+ }
+
+ .main__header {
+   margin-left: 16px;
+   margin-right: 16px;
+}
+
+.navigation-weeks {
+  
+}
+
+.wrapper__navigation-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  
+}
+
+.navigation-weeks__href {
+  margin: 4px;
+  width: 100px;
+}
+
+ .week-description {
+   padding-left: 8px;
+ }
+
+ .week-description__list {
+  display: contents;
+ }
+
+ .important-link {
+   word-break: break-all;
+  
+ }
+
+ .workweek {
+   margin: 20px;
+ }
+
+ .workweek__website {
+   padding-left: 24px;
+   margin: 0;
+ }
+
+ .picture-boxmodel {
+   display: block;
+   max-width: 100%;
+   
+ }
+
+ .workweek-border {
+   word-break: break-all;
+ }
+ .navigation {
+  display: none;
+
+}
+
+.navigation--open {
+  display: block;
+
+}
+
+.navigation__link {
+  display: block;
+  width: fit-content;
+}
+
+.navigation__button {
+  position: absolute;
+  top: 16px;
+  
+}
+
+.header__picture {
+  display: none;
+}
+
+}
