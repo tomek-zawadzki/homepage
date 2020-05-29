@@ -6,3 +6,4 @@ buttonHamburger.addEventListener('click', () => {
 
 })
 
+console.log(buttonHamburger)
