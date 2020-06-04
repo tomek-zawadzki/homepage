@@ -59,20 +59,21 @@ body {
   padding: 8px;
   transform: scale(1.2); }
 
-.section-one {
+.initation {
   background-color: #104f55;
   margin: 30px;
   padding: 20px;
   border-radius: 30px; }
-  .section-one__main-title {
+  .initation__title {
     display: flex;
     justify-content: center;
     font-size: 2em;
     padding-bottom: 30px;
     border-bottom: #092327 dashed 2px;
     margin: 0, 40px; }
-  .section-one__paragraf--link {
-    color: #e0ff4f; }
+
+.teacher__paragraf--link {
+  color: #e0ff4f; }
 
 .container__workweek-plan {
   display: grid;
@@ -214,4 +215,8 @@ body {
   .navigation__button:focus::after {
     transform: rotate(-90deg) translateX(-10px); }
   .header__picture {
+    display: none; } }
+
+@media screen and (min-width: 769px) {
+  .navigation__button {
     display: none; } }

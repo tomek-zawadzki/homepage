@@ -1,3 +1,6 @@
+@import "modules/workweek.scss";
+
+
 html {
   box-sizing: border-box;
 }
@@ -8,6 +11,7 @@ html {
 }
 
 $tablet: 768px;
+$desktop: 769px;
 
 body {
   background-color: #092327;
@@ -58,50 +62,22 @@ body {
     padding: 8px;
     margin-top: 8px;
     margin-bottom: 8px;
+    :hover {
+      color: #00a9a5;
+      background-color: #e0ff4f;
+      border: 1px solid black;
+      border-radius: 4px;
+      padding: 8px;
+      transform: scale(1.2);
+    }
   }
 }
 
-.navigation__link:hover {
-  color: #00a9a5;
-  background-color: #e0ff4f;
-  border: 1px solid black;
-  border-radius: 4px;
-  padding: 8px;
-  transform: scale(1.2);
-}
-
-.section-one {
+.initation {
   background-color: #104f55;
   margin: 30px;
   padding: 20px;
   border-radius: 30px;
-  &__main-title {
-    display: flex;
-    justify-content: center;
-    font-size: 2em;
-    padding-bottom: 30px;
-    border-bottom: #092327 dashed 2px;
-    margin: 0, 40px;
-  }
-  &__paragraf--link {
-    color: #e0ff4f;
-  }
-}
-
-.container__workweek-plan {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  grid-gap: 2.5rem;
-  width: 95%;
-}
-
-.workweek {
-  background-color: #104f55;
-  margin: 30px;
-  padding: 20px;
-  border-radius: 30px;
-  width: 250px;
-  min-height: 400px;
   &__title {
     display: flex;
     justify-content: center;
@@ -110,38 +86,28 @@ body {
     border-bottom: #092327 dashed 2px;
     margin: 0, 40px;
   }
-  &__paragraf-bottom {
-    padding: 6px;
+}
+
+.teacher {
+  &__paragraf--link {
     color: #e0ff4f;
-    text-align: center;
-    border: 2px solid #e0ff4f;
-    border-radius: 8px;
   }
 }
 
-.workweek__paragraf-bottom:hover {
-  padding: 6px;
-  color: #104f55;
-  text-align: center;
-  border: 2px solid #104f55;
-  border-radius: 8px;
-  background-color: #e0ff4f;
+.container {
+  &__workweek-plan {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 2.5rem;
+    width: 95%;
+  }
 }
 
-.workweek__title::before {
-  content: "";
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  flex-shrink: 0;
-  background-color: #fff;
-  margin-right: 8px;
-}
-
-.container__week-description {
-  display: flex;
-  flex-direction: row;
+.container {
+  &__week-description {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .week-description {
@@ -198,11 +164,13 @@ body {
     }
   }
 
-  .container__workweek-plan {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px));
-    grid-gap: 2.5rem;
-    width: 100vw;
+  .container {
+    &__workweek-plan {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px));
+      grid-gap: 2.5rem;
+      width: 100vw;
+    }
   }
 
   .workweek {
@@ -264,5 +232,13 @@ body {
 
   .header__picture {
     display: none;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .navigation {
+    &__button {
+      display: none;
+    }
   }
 }

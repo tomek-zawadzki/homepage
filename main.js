@@ -79,7 +79,7 @@ switch (myNumber) {
 }
 
 const myClick = () => {
-  const mistake = document.querySelector('.main__heading--js')
+  const mistake = document.querySelector('.main__title--js')
   mistake.innerHTML = `ERROR!!! ERROR!!! ERROR!!!`
 } 
 

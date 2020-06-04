@@ -60,8 +60,6 @@ body {
   }
 }
 
-.navigation__link {
-}
 
 .navigation__link:hover {
   color: #00a9a5;
@@ -94,11 +92,6 @@ body {
   }
 }
 
-.navigation-weeks__title {
-}
-
-.navigation-weeks__href {
-}
 
 .navigation-weeks__href:hover {
   background-color: white;
@@ -133,20 +126,22 @@ body {
     border-bottom: #092327 dashed 2px;
     margin: 0, 40px;
   }
-  &__website {
-    background-color: #00a9a5;
-    margin: 10px;
-    margin-top: 40px;
-    padding: 20px;
-    border-radius: 30px;
-  }
-  &__border {
+  &-border {
     display: inline-block;
     border: 2px solid white;
     padding: 15px;
     margin: 10px;
   }
 }
+
+.website {
+  background-color: #00a9a5;
+  margin: 10px;
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 30px;
+}
+
 
 .container__week-description {
   display: flex;
@@ -276,12 +271,16 @@ body {
 
   .workweek {
     margin: 20px;
-    &__website {
-      padding-left: 24px;
-      margin: 0;
-    }
     &-border {
       word-break: break-all;
+    }
+  }
+
+  .website {
+    margin: 0;
+    padding-left: 4px;
+    &__title {
+      padding-left: 16px;
     }
   }
 

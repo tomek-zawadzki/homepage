@@ -106,17 +106,18 @@ body {
     padding-bottom: 30px;
     border-bottom: #092327 dashed 2px;
     margin: 0, 40px; }
-  .workweek__website {
-    background-color: #00a9a5;
-    margin: 10px;
-    margin-top: 40px;
-    padding: 20px;
-    border-radius: 30px; }
-  .workweek__border {
+  .workweek-border {
     display: inline-block;
     border: 2px solid white;
     padding: 15px;
     margin: 10px; }
+
+.website {
+  background-color: #00a9a5;
+  margin: 10px;
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 30px; }
 
 .container__week-description {
   display: flex;
@@ -215,11 +216,13 @@ body {
     word-break: break-all; }
   .workweek {
     margin: 20px; }
-    .workweek__website {
-      padding-left: 24px;
-      margin: 0; }
     .workweek-border {
       word-break: break-all; }
+  .website {
+    margin: 0;
+    padding-left: 4px; }
+    .website__title {
+      padding-left: 16px; }
   .picture-boxmodel {
     display: block;
     max-width: 100%; }
