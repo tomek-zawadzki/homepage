@@ -12,6 +12,16 @@
       padding-bottom: 30px;
       border-bottom: #092327 dashed 2px;
       margin: 0, 40px;
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        background-color: #fff;
+        margin-right: 8px;
+      }
     }
     &__paragraf-bottom {
       padding: 6px;
@@ -27,15 +37,6 @@
         border-radius: 8px;
         background-color: #e0ff4f;
       }
-      &::before {
-        content: "";
-        display: inline-block;
-        width: 25px;
-        height: 25px;
-        border-radius: 50%;
-        flex-shrink: 0;
-        background-color: #fff;
-        margin-right: 8px;
-      }
+     
     }
   }

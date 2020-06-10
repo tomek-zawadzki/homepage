@@ -5,6 +5,15 @@ console.log(name);
 console.log(age);
 console.log(`ELO ELO 3210, jestem ${name} i mam ${age} lat.`);
 
+const buttonHamburger =  document.querySelector('.navigation__button--js')
+
+buttonHamburger.addEventListener('click', () => {
+    const nav = document.querySelector('.navigation--js')
+    nav.classList.toggle('navigation--open')
+
+})
+
+
 const heading = document.querySelector(".week-description__title--js");
 heading.innerHTML = `Notatki z pierwszego tygodnia.`;
 
@@ -128,10 +137,3 @@ console.log(buttonThird)
 
 buttonThird.addEventListener('mouseover', myMouseOver )
 
-const buttonHamburger =  document.querySelector('.navigation__button--js')
-
-buttonHamburger.addEventListener('click', () => {
-    const nav = document.querySelector('.navigation--js')
-    nav.classList.toggle('navigation--open')
-
-})
